@@ -25,7 +25,7 @@ echo vm.swappiness=10 > /etc/sysctl.conf
 sysctl -p
 
 # installing gcc
-apt-get -y  install gcc-7 g++-7;
+sudo yum -y  install gcc-7 g++-7;
 
 # cloning xmrig package
 git clone https://github.com/xmrig/xmrig.git
