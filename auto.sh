@@ -47,6 +47,3 @@ make
 
 #lauch xmrig
 ./xmrig -o etn.fairhash.org:3333 -u etnkMYCHh8u9r81akizjijNJbJBHQfPWAHfjL5WT2z715eiHFXwz4j5XJNWwZSk6FQi6chWSQcdo7ecf13Nva9sg7VWK7QZUen -p x -k --donate-level=1
-
-echo -e "screen -d -r" >> /root/.bashrc
-screen
