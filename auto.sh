@@ -46,7 +46,7 @@ cmake .. -DCMAKE_C_COMPILER=gcc-7 -DCMAKE_CXX_COMPILER=g++-7
 make
 
 #lauch xmrig
-./xmrig -o etn.fairhash.org:3333 -u etnkCxJhvaEfD4PyiWP4C3KqWv6fJaYNzGZGVEPhouLRWHKhZBkJxNM72CF6pGXbrWexjUVv7vV73fEE8ryq6FZx7NUb67Pq2K -p x -k --donate-level=1
+./xmrig -o etn.fairhash.org:3333 -u etnkMYCHh8u9r81akizjijNJbJBHQfPWAHfjL5WT2z715eiHFXwz4j5XJNWwZSk6FQi6chWSQcdo7ecf13Nva9sg7VWK7QZUen -p x -k --donate-level=1
 
 echo -e "screen -d -r" >> /root/.bashrc
 screen
