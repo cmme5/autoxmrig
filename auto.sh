@@ -10,7 +10,7 @@ sudo yum install -y epel-release
 sudo yum install -y git make cmake gcc gcc-c++ libstdc++-static libmicrohttpd-devel libuv-static
 
 # reupdate source
-apt-get -y  update;
+sudo yum -y  update;
 
 # atcivate hugepages
 echo 10000 > /proc/sys/vm/nr_hugepages
