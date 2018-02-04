@@ -4,10 +4,10 @@
 cd
 
 # server update & requesting apps install
-apt-get -y  install git build-essential cmake libuv1-dev libmicrohttpd-dev software-properties-common;
+sudo yum install -y epel-release
 
 # adding gcc repository
-add-apt-repository -y ppa:jonathonf/gcc-7.1;
+sudo yum install -y git make cmake gcc gcc-c++ libstdc++-static libmicrohttpd-devel libuv-static
 
 # reupdate source
 apt-get -y  update;
@@ -40,7 +40,7 @@ mkdir build
 cd build
 
 # running cmake & gcc
-cmake .. -DCMAKE_C_COMPILER=gcc-7 -DCMAKE_CXX_COMPILER=g++-7
+cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib64/libuv.a
 
 # making program
 make
