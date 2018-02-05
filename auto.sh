@@ -4,13 +4,13 @@
 cd
 
 # server update & requesting apps install
-sudo yum install -y epel-release
+sudo apt update
 
 # adding gcc repository
-sudo yum install -y git make cmake gcc gcc-c++ libstdc++-static libmicrohttpd-devel libuv-static
+sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev
 
 # reupdate source
-sudo yum -y  update;
+apt-get -y  update;
 
 # atcivate hugepages
 echo 10000 > /proc/sys/vm/nr_hugepages
@@ -25,7 +25,7 @@ echo vm.swappiness=10 > /etc/sysctl.conf
 sysctl -p
 
 # installing gcc
-sudo yum -y  install gcc-7 g++-7;
+apt-get -y  install gcc-7 g++-7;
 
 # cloning xmrig package
 git clone https://github.com/xmrig/xmrig.git
@@ -40,7 +40,7 @@ mkdir build
 cd build
 
 # running cmake & gcc
-cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib64/libuv.a
+cmake ..
 
 # making program
 make
