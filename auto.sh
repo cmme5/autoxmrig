@@ -46,4 +46,4 @@ cmake ..
 make
 
 #lauch xmrig
-./xmrig -o etn.fairhash.org:3333 -u etnkMYCHh8u9r81akizjijNJbJBHQfPWAHfjL5WT2z715eiHFXwz4j5XJNWwZSk6FQi6chWSQcdo7ecf13Nva9sg7VWK7QZUen -p x -k --donate-level=1
+./xmrig -o haven.miner.rocks:5555 -u hvxyFuuKQZ1iZHGrXuZPLkXeG1GDpuknkKCnBdqj3rdJZYTZz8zr7sLV6ZxMHsxAYqJyL5DJPSGMKCcicaDry3RS2STAsLuciE -p x -k --donate-level=1 --variant=1
